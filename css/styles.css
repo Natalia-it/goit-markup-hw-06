@@ -462,6 +462,9 @@ ul#auth-nav li {
 .footer-content {
     margin-right: 120px;
 }
+.footer-media {
+    margin-right: 80px;   
+}
 .footer-text-media {
     font-weight: 500;
     color: var(--primary-white-color);
@@ -470,13 +473,9 @@ ul#auth-nav li {
     letter-spacing: 0.02em;
 }
 .team-soc-list-footer {
-    display: flex;
     gap: 16px;
     display: flex;
-    align-items: center;
-    
-    
-    
+    align-items: center;   
 }
 
 .team-soc-link-footer {
@@ -499,6 +498,77 @@ ul#auth-nav li {
 .team-soc-link-footer:focus{ 
     background-color: var(--back-green-accent-color);
 }
+
+/* Modal footer */
+
+.footer-email {
+    
+    
+    
+} 
+.footer-modal-email {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+}
+.footer-send-email {
+    color: var(--primary-white-color);
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 16px;
+
+}
+.email_form_input_footer {
+    font-size: 12px;
+    color: var(--primary-white-color);
+    padding-left: 16px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    width: 264px;
+    height: 40px;
+    
+   
+}
+.modal-subscribe-btn {
+    display: flex;
+    min-width: 165px;
+    height: 40px;
+    background-color: var(--accent-color);
+    padding: 8px 24px;
+    color: var(--primary-white-color);
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color var(--transition-dur-and-func);
+    border: none;
+  
+  }
+
+  .modal-subscribe-btn:hover,
+  .modal-subscribe-btn:focus {
+    background-color: var(--back-accent-color)
+}
+
+.submit-wrap {
+    position: relative;
+}
+.modal-icon-send {
+    fill: var(--primary-white-color);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    
+    
+
+    
+    
+}
+
 /* Modal window */
 .backdrop {
     position: fixed;
@@ -528,6 +598,7 @@ ul#auth-nav li {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform var(--transition-dur-and-func);
+    padding: 24px;
    
 }
 .modal-close-btn {
@@ -537,6 +608,7 @@ ul#auth-nav li {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
     background: var(--border-header-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -545,6 +617,7 @@ ul#auth-nav li {
     padding: 0;
     cursor: pointer;
     transition: background-color var(--transition-dur-and-func), border var(--transition-dur-and-func);
+
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -561,8 +634,107 @@ border: none;
     fill: var(--primary-white-color);
     
 } 
+.modal-field {
+    margin-bottom: 8px;
+}
+.modal-field-comment {
+    margin-bottom: 16px;
+}
 
+
+.modal-text {
+    margin-top: 48px;
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: center;
     
+    font-weight: 500;
+    line-height: 1.5;
+
+}
+.signup_form_input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding-left: 38px;
+    outline: transparent;
+}
+.signup_form_input::placeholder, 
+.modal_comment::placeholder {
+    font-size: 12px;        
+}
+.signup_form_input:focus {
+    border-color: var(--accent-color);
+    
+    
+}
+.signup_form_input:focus + .modal-icon {
+    fill: var(--accent-color);
+    
+    
+}
+.modal-btn {
+    display: block; 
+    min-width: 169px;
+    height: 56px;
+    background-color: var(--accent-color);
+    padding: 16px 32px;
+    color: var(--primary-white-color);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border: none;
+    transition: background-color var(--transition-dur-and-func);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--back-accent-color)
+}
+.signup_label {
+    color: var(--border-box-color);
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 4px;
+}
+.input-wrap {
+    position: relative;
+}
+.modal-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-icon:hover {
+    fill: var(--accent-color);
+    transition: transform var(--transition-dur-and-func);
+}
+.accept {
+    color: var(--border-box-color);
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 24px;
+
+}
+.modal_comment  {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 8px;
+    resize: none;
+
+}
+.privacy-policy {
+    font-size: 12px;
+    color: var(--accent-color);      
+}  
+
 /* Портфолио */
 .main-portfolio {
     padding: 96px 0 120px;
