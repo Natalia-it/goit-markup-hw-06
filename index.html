@@ -332,13 +332,14 @@
 
      <form class="footer-modal-email">
         <label for="footer_email" class="email_label_footer">
-         <input class="email_form_input_footer" type="email" name="footer_email" placeholder="E-mail" id="footer_email">
+         <input class="email_form_input_footer" type="email" name="email" placeholder="E-mail" id="footer_email">
         </label>
         <div class="submit-wrap">
-            <button type="submit" class="modal-subscribe-btn">Subscribe</button>
-         <svg class="modal-icon-send" width="24" height="20">
+            <button type="submit" class="modal-subscribe-btn">Subscribe
+         <svg class="modal-icon-send" width="24" height="24">
             <use href="./images/icons.svg#icon-send"></use>
         </svg>
+    </button>
         </div>
     </form>  
 </div>
@@ -346,6 +347,7 @@
 </div>
 
 </footer>
+
     <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -357,44 +359,49 @@
         <form class="signup_form">
 
             <div class="modal-field">
-            <label for="user_name" class="signup_label">Name</label>
+            <label for="user-name" class="signup-label">Name</label>
             <div class="input-wrap">
-            <input class="signup_form_input" type="text" name="user_name" id="user_name">
+            <input class="signup-form-input" type="text" name="user-name" id="user-name">
             <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
             </svg>
             </div>
             </div>
             <div class="modal-field">
-            <label for="user_email" class="signup_label">Email</label>
+            <label for="user-email" class="signup-label">Email</label>
             <div class="input-wrap">
-            <input class="signup_form_input" type="email" name="user_email" id="user_email">
+            <input class="signup-form-input" type="email" name="user-email" id="user-email">
             <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
             </svg>
             </div>
             </div>
             <div class="modal-field">
-            <label for="user_phone" class="signup_label">Phone</label>
+            <label for="user-phone" class="signup-label">Phone</label>
             <div class="input-wrap">
-            <input class="signup_form_input" type="phone" name="user_phone" id="user_phone">
+            <input class="signup-form-input" type="tel" name="user-phone" id="user-phone">
             <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
             </svg>
             </div>
            </div>
             <div class="modal-field-comment">
-            <label for="user_comment" class="signup_label">Comment</label>
-            <textarea class="modal_comment" name="user_comment" placeholder="Text input" id="user_comment"></textarea>
+            <label for="user-comment" class="signup-label">Comment</label>
+            <textarea class="modal-comment" name="user-comment" placeholder="Text input" id="user-comment"></textarea>
             </div>
             
-            <label class="accept">
-                <input class="accept" type="checkbox" />
-                <span class></span>
-                I accept the terms and conditions of the <a href="" class="privacy-policy">Privacy Policy</a>
+            <div class="modal-field-accept">
+                <input class="accept visually-hidden" type="checkbox" id="user-privacy" value="true" name="user-privacy" />
+            <label class="accept-modal-descr" for="user-privacy">
+                <span class="modal-accept-span">
+                    <svg class="modal-accept-svg" height="8" width="10">
+                        <use href="./images/icons.svg#icon-accept"></use>
+                    </svg>
+                </span>
+            I accept the terms and conditions of the <a href="" class="privacy-policy-link">Privacy Policy</a>
             </label>
-
-            
+            </div>
+             
                 
             
               
