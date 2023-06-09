@@ -532,6 +532,7 @@ ul#auth-nav li {
 
 .modal-subscribe-btn {
     display: flex;
+    position: relative;
     min-width: 165px;
     height: 40px;
     background-color: var(--accent-color);
@@ -554,9 +555,7 @@ ul#auth-nav li {
     background-color: var(--back-accent-color)
 }
 
-.submit-wrap {
-    position: relative;
-}
+
 .modal-icon-send {
     fill: var(--primary-white-color);
     position: absolute;
@@ -659,6 +658,7 @@ border: none;
     padding-left: 38px;
     background-color: transparent;
     transition: border-color var(--transition-dur-and-func);
+    outline: transparent;
 }
 
 .signup-form-input::placeholder, 
@@ -692,7 +692,7 @@ border: none;
     transition: background-color var(--transition-dur-and-func);
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.04;
+    letter-spacing: 0.04em;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -721,6 +721,10 @@ border: none;
     transition: transform var(--transition-dur-and-func);
 }
 
+.modal-field-accept {
+    margin-bottom: 24px; 
+}
+
 .accept-modal-descr{
     position: relative;
     display: flex;
@@ -734,7 +738,7 @@ border: none;
 .modal-comment  {
     width: 100%;
     height: 120px;
-    border: 1px solid rgba(46, 47, 66, 0.2);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     resize: none;
     font-size: 12px;
@@ -744,6 +748,7 @@ border: none;
     padding: 8px 16px; 
     outline: transparent; 
     transition: border-color var(--transition-dur-and-func);
+    color: rgba(46, 47, 66, 0.4);
 
 
 }
@@ -756,22 +761,23 @@ border: none;
     color: var(--accent-color);      
 }  
 .modal-accept-span {
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4); 
     border-radius: 2px;
-    display: inline-flex;
     align-items: center; 
     justify-content: center; 
     fill: transparent; 
     margin-right: 8px;
+    transition: background-color var(--transition-dur-and-func), border var(--transition-dur-and-func), fill var(--transition-dur-and-func);
     
 }
 
 .accept:checked + .accept-modal-descr > .modal-accept-span {
     background-color: var(--back-accent-color);
     border: none;
-    fill: var(--primary-white-color);
+    fill: var(--back-dark-color);
 }  
 .modal-accept-svg {
     position: absolute;
