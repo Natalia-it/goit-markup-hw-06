@@ -735,9 +735,13 @@ border: none;
     padding: 8px 16px; 
     outline: transparent; 
     transition: border-color var(--transition-dur-and-func);
-    color: rgba(46, 47, 66, 0.4);
-    color: var(--title-text-color);
+    color:  var(--title-text-color) 
+    
 }
+.modal-comment::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+}
+
 .modal-comment:focus {
     border-color: var(--accent-color);
 
