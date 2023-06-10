@@ -714,25 +714,12 @@ border: none;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    transition: fill var(--transition-dur-and-func)
+    transition: fill var(--transition-dur-and-func);
 }
-.modal-icon:hover {
-    fill: var(--accent-color);
-    transition: transform var(--transition-dur-and-func);
-}
+
 
 .modal-field-accept {
     margin-bottom: 24px; 
-}
-
-.accept-modal-descr{
-    position: relative;
-    display: flex;
-    color: var(--border-box-color);
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    margin-bottom: 24px;
 }
 
 .modal-comment  {
@@ -749,8 +736,6 @@ border: none;
     outline: transparent; 
     transition: border-color var(--transition-dur-and-func);
     color: rgba(46, 47, 66, 0.4);
-
-
 }
 .modal-comment:focus {
     border-color: var(--accent-color);
@@ -759,7 +744,15 @@ border: none;
 .privacy-policy-link {
     font-size: 12px;
     color: var(--accent-color);      
-}  
+} 
+.accept-modal-descr{
+    color: var(--border-box-color);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-bottom: 24px;
+}
+
 .modal-accept-span {
     display: inline-flex;
     width: 16px;
@@ -780,10 +773,8 @@ border: none;
     fill: var(--back-dark-color);
 }  
 .modal-accept-svg {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     transition: fill var(--transition-dur-and-func);
+    
 }
 
     
